@@ -1,0 +1,233 @@
+/* =========================
+   Global Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+/* =========================
+   Header & Navigation
+========================= */
+
+header {
+    background-color: #111827;
+    padding: 18px 20px;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+nav a:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+/* =========================
+   Main Content
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 75vh;
+}
+
+section {
+    padding: 70px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Buttons & Links
+========================= */
+
+section a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section a:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   Skills
+========================= */
+
+ul {
+    list-style-position: inside;
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Projects
+========================= */
+
+article {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Contact Form
+========================= */
+
+form {
+    max-width: 650px;
+    margin-top: 30px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+
+    border: 1px solid #9ca3af;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    border: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #111827;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+}
